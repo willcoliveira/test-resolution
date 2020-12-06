@@ -1,6 +1,5 @@
 {
     "integrationFolder": "cypress/integration/",
-    "screenshotsFolder": "/cypress/screenshots",
     "defaultCommandTimeout": 15000,
     "responseTimeout": 15000,
     "numTestsKeptInMemory": 1,
@@ -9,6 +8,14 @@
     "retries": {
       "runMode": 1,
       "openMode": 0
+    },
+    "screenshotsFolder": "cypress/results/assets/",
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "cypress/results/",
+        "overwrite": false,
+        "html": false,
+        "json": true
     },
     "env":  {
       "apiUrl": "localhost:3001/",

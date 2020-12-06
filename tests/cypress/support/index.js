@@ -18,3 +18,11 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+var addContext = require('mochawesome/addContext');
+
+Cypress.on('test:after:run', (test, runnable) => {
+    if (test.state === 'failed') {
+        var screenshotFileName = `${runnable.parent.title} -- ${test.title} (failed).png`;
+        addContext({ test }, `assets/${Cypress.spec.name}/${screenshotFileName}`);
+    }
+});

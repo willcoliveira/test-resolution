@@ -6,9 +6,11 @@
   "scripts": {
     " --- CYPRESS SCRIPTS ---- ": "",
     "cy:open": "cypress open",
-    "test:ui": "cypress run --browser chrome --headless --spec 'cypress/integration/ui/**spec.js'",
+    "test:ui": "cypress run --browser chrome --spec 'cypress/integration/ui/**spec.js'",
     "test:ui:headless": "cypress run --browser chrome --headless --spec 'cypress/integration/ui/**spec.js'",
     "test:api": "cypress run --spec 'cypress/integration/api/**spec.js'",
+    "test:ui:headless:mocha": "yarn cy:clean:results; cypress run --browser chrome --headless --spec 'cypress/integration/ui/**spec.js'; yarn cy:results",
+    "test:api:mocha": "yarn cy:clean:results; cypress run --spec 'cypress/integration/api/**spec.js'; yarn cy:results",
     " --- MOCHAWESOME REPORT SCRIPTS ---- ": "",
     "cy:results": "yarn cy:merge:results; yarn cy:final:results",
     "cy:clean:results": "rm -rf cypress/results/*",
@@ -27,6 +29,9 @@
   "dependencies": {},
   "devDependencies": {
     "cypress": "^6.0.1",
+    "mocha": "^8.2.1",
+    "mochawesome": "^6.2.1",
+    "mochawesome-merge": "^4.2.0",
     "yarn": "^1.22.10"
   }
 }

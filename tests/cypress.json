@@ -1,0 +1,19 @@
+{
+    "integrationFolder": "cypress/integration/",
+    "screenshotsFolder": "/cypress/screenshots",
+    "defaultCommandTimeout": 15000,
+    "responseTimeout": 15000,
+    "numTestsKeptInMemory": 1,
+    "chromeWebSecurity": false,
+    "video": false,
+    "retries": {
+      "runMode": 1,
+      "openMode": 0
+    },
+    "env":  {
+      "apiUrl": "localhost:3001/",
+      "frontUrl": "http://localhost:3000/#"
+    }
+  }
+  
+  

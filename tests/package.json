@@ -1,0 +1,32 @@
+{
+  "name": "test-and-automation-challenge-resolution",
+  "version": "1.0.0",
+  "description": "test and automation challenge resolution for hopin's tasks.",
+  "main": "index.js",
+  "scripts": {
+    " --- CYPRESS SCRIPTS ---- ": "",
+    "cy:open": "cypress open",
+    "test:ui": "cypress run --browser chrome --headless --spec 'cypress/integration/ui/**spec.js'",
+    "test:ui:headless": "cypress run --browser chrome --headless --spec 'cypress/integration/ui/**spec.js'",
+    "test:api": "cypress run --spec 'cypress/integration/api/**spec.js'",
+    " --- MOCHAWESOME REPORT SCRIPTS ---- ": "",
+    "cy:results": "yarn cy:merge:results; yarn cy:final:results",
+    "cy:clean:results": "rm -rf cypress/results/*",
+    "cy:merge:results": "mochawesome-merge cypress/results/*.json > cypress/results/output.json",
+    "cy:final:results": "marge cypress/results/output.json --reportDir cypress/results/"
+  },
+  "keywords": [
+    "tests",
+    "frontend",
+    "backend",
+    "js",
+    "cypress"
+  ],
+  "author": "William Oliveira",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^6.0.1",
+    "yarn": "^1.22.10"
+  }
+}

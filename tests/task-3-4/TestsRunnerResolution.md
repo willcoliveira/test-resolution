@@ -44,7 +44,7 @@ After the completed node's installation, you will need to clone this current rep
 > ```
 
 ### Installing the dependencies 
-Open a new terminal and navigate to the tests folder and install all dev dependencies using:
+Open a new terminal and navigate to the tests folder inside the project test-resolution and install all dev dependencies using the following commands:
 
 > ```bash
 > cd /tests
@@ -57,9 +57,9 @@ Open a new terminal and navigate to the tests folder and install all dev depende
 - You will see the following messages using npm: 
 > ```bash
 > npm install
-> yarn@1.22.10 preinstall /Users/williamoliveira/Documents/Other/test-qa/testingVersion/test-resolution/tests/node_modules/yarn
+> yarn@1.22.10 preinstall test-resolution/tests/node_modules/yarn
 > :; (node ./preinstall.js > /dev/null 2>&1 || true)
-> cypress@6.0.1 postinstall /Users/williamoliveira/Documents/Other/test-qa/testingVersion/test-resolution/tests/node_modules/cypress
+> cypress@6.0.1 postinstall test-resolution/tests/node_modules/cypress
 > node index.js --exec install
 Cypress 6.0.1 is installed
 npm WARN test-and-automation-challenge-resolution@1.0.0 No repository field.

@@ -16,10 +16,10 @@ Please complete the following:
 2) Create a Readme file telling us how to run it; and
 3) Commit and push those to a folder called **ui-tests** on the public repository you created on **Task 1**.
 
-## Task 3 and 4: Resolution by William Oliveira
+## Task 3 and 4: Resolution
 ### Code Part - Introduction
 
-In this current repo you will be able to test Hopin's challenge using [Cypress](https://www.cypress.io/). If you need to understand a bit more about Cypress, the API documentation is available [here](https://docs.cypress.io/api/api/table-of-contents.html). 
+In this current repo you will be able to test Hopin's challenge using [Cypress](https://www.cypress.io/). If you need to understand a bit more about Cypress, the API documentation is available [here](https://docs.cypress.io/api/api/table-of-contents.html).
 
 ##### Dependencies
 As mentioned on [TestEnvironment.md] document. The only pre-requisite to run this app is to have npm and Node.js installed in your machine. For instructions on how to install, go to https://nodejs.org/en/
@@ -54,7 +54,21 @@ Open a new terminal and navigate to the tests folder and install all dev depende
 > yarn 
 > ```
 
-You will see the following messages: 
+- You will see the following messages using npm: 
+> ```bash
+> npm install
+> yarn@1.22.10 preinstall /Users/williamoliveira/Documents/Other/test-qa/testingVersion/test-resolution/tests/node_modules/yarn
+> :; (node ./preinstall.js > /dev/null 2>&1 || true)
+> cypress@6.0.1 postinstall /Users/williamoliveira/Documents/Other/test-qa/testingVersion/test-resolution/tests/node_modules/cypress
+> node index.js --exec install
+Cypress 6.0.1 is installed
+npm WARN test-and-automation-challenge-resolution@1.0.0 No repository field.
+added 341 packages from 201 contributors and audited 341 packages in 4.185s
+found 0 vulnerabilities
+> ```
+
+- You will see the following messages using yarn: 
+
 > ```bash
 > yarn install v1.15.2
 > info No lockfile found.
@@ -148,4 +162,3 @@ Also, If the test fails it will show the exactly step and a screenshot of that m
 - ![Test Report failures details 2](images/failuresDetails2.png)
 
 ================================================
-

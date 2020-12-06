@@ -6,3 +6,7 @@
 /build
 /dist
 
+# tests
+/tests/node_modules
+node_modules
+/tests/cypress/results
